@@ -27,13 +27,13 @@ export default function Index() {
       profileImage: require('../../assets/images/Profile-Picture1.jpg'),
       profileName: 'John Doe',
       postImage: require('../../assets/images/LinkedIn-Post1.jpg'),
-      postText: 'This is the content of post 1',
+      postText: 'Teamwork combines unique skills and perspectives, creating results greater than the sum of individual efforts. Effective teamwork drives innovation, enhances problem-solving, and boosts productivity. It builds a culture of support and accountability, where challenges are tackled together and successes are shared. True teamwork relies on communication, trust, and a shared vision, fostering an environment where everyone thrives',
     },
     {
       profileImage: require('../../assets/images/Profile-Picture2.jpg'),
       profileName: 'Jane Smith',
       postImage: require('../../assets/images/LinkedIn-Post2.jpg'),
-      postText: 'This is the content of post 2',
+      postText: 'Discover the latest trends and strategies in online business. Learn from industry experts, gain valuable insights, and find out how to grow your business effectively. Whether you are experienced or just starting out, this webinar offers practical tips and tools for success. Do not miss this opportunity to network and enhance your online business skills.',
     },
     {
       profileImage: require('../../assets/images/Profile-Picture3.jpg'),
