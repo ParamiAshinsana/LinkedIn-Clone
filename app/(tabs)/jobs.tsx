@@ -10,16 +10,16 @@ export default function JobScreen() {
   };
 
   const jobAlerts = [
-    { companyImage: require('../../assets/images/Company01.jpg'), companyName: 'Company One', jobDescription: 'Job description for company one' },
-    { companyImage: require('../../assets/images/Company02.jpg'), companyName: 'Company Two', jobDescription: 'Job description for company two' },
-    { companyImage: require('../../assets/images/Company03.jpg'), companyName: 'Company Three', jobDescription: 'Job description for company three' },
-    { companyImage: require('../../assets/images/Company09.jpg'), companyName: 'Company Four', jobDescription: 'Job description for company four' },
-    { companyImage: require('../../assets/images/Company05.jpg'), companyName: 'Company Five', jobDescription: 'Job description for company five' },
-    { companyImage: require('../../assets/images/Company06.jpg'), companyName: 'Company Six', jobDescription: 'Job description for company six' },
-    { companyImage: require('../../assets/images/Company07.jpg'), companyName: 'Company Seven', jobDescription: 'Job description for company seven' },
-    { companyImage: require('../../assets/images/Company08.jpg'), companyName: 'Company Eight', jobDescription: 'Job description for company eight' },
-    { companyImage: require('../../assets/images/Company04.jpg'), companyName: 'Company Nine', jobDescription: 'Job description for company nine' },
-    { companyImage: require('../../assets/images/Company10.jpg'), companyName: 'Company Ten', jobDescription: 'Job description for company ten' },
+    { companyImage: require('../../assets/images/Company01.jpg'), companyName: 'Company One', description: '1', jobDescription: 'Job description for company one' },
+    { companyImage: require('../../assets/images/Company02.jpg'), companyName: 'Company Two', description: '2', jobDescription: 'Job description for company two' },
+    { companyImage: require('../../assets/images/Company03.jpg'), companyName: 'Company Three', description: '3',  jobDescription: 'Job description for company three' },
+    { companyImage: require('../../assets/images/Company09.jpg'), companyName: 'Company Four', description: '4',  jobDescription: 'Job description for company four' },
+    { companyImage: require('../../assets/images/Company05.jpg'), companyName: 'Company Five', description: '5',  jobDescription: 'Job description for company five' },
+    { companyImage: require('../../assets/images/Company06.jpg'), companyName: 'Company Six', description: '6',  jobDescription: 'Job description for company six' },
+    { companyImage: require('../../assets/images/Company07.jpg'), companyName: 'Company Seven', description: '7',  jobDescription: 'Job description for company seven' },
+    { companyImage: require('../../assets/images/Company08.jpg'), companyName: 'Company Eight', description: '8',  jobDescription: 'Job description for company eight' },
+    { companyImage: require('../../assets/images/Company04.jpg'), companyName: 'Company Nine', description: '9',  jobDescription: 'Job description for company nine' },
+    { companyImage: require('../../assets/images/Company10.jpg'), companyName: 'Company Ten', description: '10',  jobDescription: 'Job description for company ten' },
   ];
 
   return (
@@ -41,6 +41,7 @@ export default function JobScreen() {
             key={index}
             companyImage={alert.companyImage}
             companyName={alert.companyName}
+            description={alert.description}
             jobDescription={alert.jobDescription}
             onClose={handleClose}
           />
