@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
   description: {
-    fontSize: 12,
-    color: '#383838',
+    fontSize: 12.3,
+    color: '#333333',
   },
   jobDescription: {
     fontSize: 12,

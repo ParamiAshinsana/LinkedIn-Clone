@@ -10,7 +10,7 @@ export default function JobScreen() {
   };
 
   const jobAlerts = [
-    { companyImage: require('../../assets/images/Company01.jpg'), companyName: 'Company One', description: '1', jobDescription: 'Job description for company one' },
+    { companyImage: require('../../assets/images/Company01.jpg'), companyName: 'Trainee System Engineer End User IT Surpport', description: 'IFS', jobDescription: 'Job description for company one' },
     { companyImage: require('../../assets/images/Company02.jpg'), companyName: 'Company Two', description: '2', jobDescription: 'Job description for company two' },
     { companyImage: require('../../assets/images/Company03.jpg'), companyName: 'Company Three', description: '3',  jobDescription: 'Job description for company three' },
     { companyImage: require('../../assets/images/Company09.jpg'), companyName: 'Company Four', description: '4',  jobDescription: 'Job description for company four' },
