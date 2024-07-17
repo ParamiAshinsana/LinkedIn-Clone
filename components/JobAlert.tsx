@@ -7,10 +7,11 @@ interface JobAlertProps {
   companyImage: any;
   companyName: string;
   jobDescription: string;
+  description: string;
   onClose: () => void;
 }
 
-const JobAlert: React.FC<JobAlertProps> = ({ companyImage, companyName, jobDescription, onClose }) => {
+const JobAlert: React.FC<JobAlertProps> = ({ companyImage, companyName, description, jobDescription, onClose }) => {
   return (
     <View style={styles.jobContainer}>
       <TouchableOpacity style={styles.closeButton} onPress={onClose}>
@@ -19,6 +20,7 @@ const JobAlert: React.FC<JobAlertProps> = ({ companyImage, companyName, jobDescr
       <Image source={companyImage} style={styles.companyImage} />
       <View style={styles.textContainer}>
         <Text style={styles.companyName}>{companyName}</Text>
+        <Text style={styles.description}>{description}</Text>
         <Text style={styles.jobDescription}>{jobDescription}</Text>
       </View>
     </View>
@@ -53,12 +55,16 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   companyName: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 16,
+    fontWeight: '500',
+  },
+  description: {
+    fontSize: 12,
+    color: '#8a8a8a',
   },
   jobDescription: {
-    fontSize: 14,
-    color: '#777',
+    fontSize: 12,
+    color: '#8a8a8a',
   },
 });
 
