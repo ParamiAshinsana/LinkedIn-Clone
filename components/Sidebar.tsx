@@ -127,6 +127,8 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
+  console.log('Sidebar is visible:', isVisible); // Log isVisible prop for debugging
+
   if (!isVisible) return null;
 
   return (
@@ -228,6 +230,8 @@ const styles = StyleSheet.create({
 });
 
 export default Sidebar;
+
+
 
 
 
