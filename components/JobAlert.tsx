@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 12.3,
-    color: '#333333',
+    color: '#1f1e1e',
   },
   jobDescription: {
     fontSize: 12,
