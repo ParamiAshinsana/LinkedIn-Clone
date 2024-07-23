@@ -143,22 +143,22 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
       <View style={styles.separator} />
 
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText}>Dummy Text Line 1</Text>
+        <Text style={styles.sidebarText}>150 profile views</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText}>Dummy Text Line 2</Text>
+        <Text style={styles.sidebarText}>View all analytics</Text>
       </TouchableOpacity>
 
       <View style={styles.separator} />
 
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText}>Heading 1</Text>
+        <Text style={styles.sidebarText}>Saved posts</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText}>Heading 2</Text>
+        <Text style={styles.sidebarText}>Groups</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText}>Heading 3</Text>
+        <Text style={styles.sidebarText}>Games</Text>
       </TouchableOpacity>
 
       <View style={styles.separator} />
