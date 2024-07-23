@@ -11,13 +11,10 @@ export default function Signup() {
       </View>
 
       <View style={styles.header}>
-        <Text style={styles.topic}>Sign in</Text>
+        <Text style={styles.topic}>Add your name</Text>
       </View>
 
-      <View style={styles.header}>
-        <Text style={styles.secondtopic}>or</Text>
-        <Text style={styles.thirdtopic}>  Join LinkedIn</Text>
-      </View>
+      
 
       <View style={styles.inputContainer}>
         <Text style={styles.label}>First Name</Text>
@@ -29,22 +26,8 @@ export default function Signup() {
         <TextInput style={styles.input} placeholder="Last Name*" />
       </View>
 
-      <View style={styles.inputContainer}>
-        <Text style={styles.label}>Email or Phone Number</Text>
-        <TextInput style={styles.input} placeholder="Email or Phone Number" keyboardType="email-address" />
-      </View>
-
-      <View style={styles.inputContainer}>
-        <Text style={styles.label}>Password</Text>
-        <TextInput style={styles.input} placeholder="Password" secureTextEntry />
-      </View>
-
-      <View style={styles.inputContainer}>
-        <Text style={styles.label}>Confirm Password</Text>
-        <TextInput style={styles.input} placeholder="Confirm Password" secureTextEntry />
-      </View>
       
-      <TouchableOpacity style={styles.button}  onPress={() => router.push('/home')}>
+      <TouchableOpacity style={styles.button}  onPress={() => router.push('/signupPassword')}>
         <Text style={styles.buttonText}>Continue</Text>
       </TouchableOpacity>
     </View>
