@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   button1: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#2657d1',
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 25,
@@ -98,11 +98,11 @@ const styles = StyleSheet.create({
   },
   buttonText1: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: 17.5,
   },
   buttonText: {
     color: '#050505',
-    fontSize: 16,
+    fontSize: 17.5,
   },
   icon: {
     width: 28,

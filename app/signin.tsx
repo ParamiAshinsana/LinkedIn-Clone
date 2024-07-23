@@ -14,6 +14,11 @@ export default function Signin() {
         <Text style={styles.topic}>Sign in</Text>
       </View>
 
+      <View style={styles.header}>
+        <Text style={styles.secondtopic}>or</Text>
+        <Text style={styles.thirdtopic}>  Join LinkedIn</Text>
+      </View>
+
       <View style={styles.inputContainer}>
         <Text style={styles.label}>First Name</Text>
         <TextInput style={styles.input} placeholder="First Name" />
@@ -68,6 +73,17 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
   },
+  secondtopic: {
+    fontSize: 12,
+    fontWeight: '400',
+    // marginTop:-1,
+  },
+  thirdtopic: {
+    fontSize: 13,
+    fontWeight: '400',
+    // marginTop:-1,
+    color: '#3d67d1',
+  },
   inputContainer: {
     marginBottom: 15,
   },
@@ -83,7 +99,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   button: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#3d67d1',
     paddingVertical: 15,
     borderRadius: 5,
     alignItems: 'center',
