@@ -19,15 +19,7 @@ export default function Signin() {
         <Text style={styles.thirdtopic}>  Join LinkedIn</Text>
       </View>
 
-      <View style={styles.inputContainer}>
-        <Text style={styles.label}>First Name</Text>
-        <TextInput style={styles.input} placeholder="First Name*" />
-      </View>
       
-      <View style={styles.inputContainer}>
-        <Text style={styles.label}>Last Name</Text>
-        <TextInput style={styles.input} placeholder="Last Name*" />
-      </View>
 
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Email or Phone Number</Text>
