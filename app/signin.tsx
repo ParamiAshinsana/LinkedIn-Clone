@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 import { Link, router } from 'expo-router';
-import CheckBox from '@react-native-community/checkbox';
+// import CheckBox from '@react-native-community/checkbox';
+import { Checkbox } from 'expo-checkbox';
+
+
 
 export default function Signin() {
+
+// State to manage checkbox status
+  const [agree, setAgree] = useState(false);
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -59,6 +66,19 @@ export default function Signin() {
           <Image source={require('../assets/images/eye-24.png')} style={styles.passwordicon} />
         </View>
       </View>
+
+
+      <View style={styles.inputContainer}>
+        <View style={styles.checkboxContainer}>
+          <Checkbox
+            value={agree}
+            onValueChange={setAgree}
+            color={agree ? '#3d67d1' : '#b9babd'}
+          />
+          <Text style={styles.checkboxLabel}>I agree to the Terms and Conditions</Text>
+        </View>
+      </View>
+
 
       <TouchableOpacity style={styles.button} onPress={() => router.push('/home')}>
         <Text style={styles.buttonText}>Continue</Text>
@@ -174,5 +194,13 @@ const styles = StyleSheet.create({
   buttonText: {
     color: '#fff',
     fontSize: 16,
+  },
+  checkboxContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  checkboxLabel: {
+    marginLeft: 10,
+    color: '#777',
   },
 });
