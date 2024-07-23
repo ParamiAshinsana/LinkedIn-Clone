@@ -21,12 +21,12 @@ export default function Signin() {
 
       <View style={styles.inputContainer}>
         <Text style={styles.label}>First Name</Text>
-        <TextInput style={styles.input} placeholder="First Name" />
+        <TextInput style={styles.input} placeholder="First Name*" />
       </View>
       
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Last Name</Text>
-        <TextInput style={styles.input} placeholder="Last Name" />
+        <TextInput style={styles.input} placeholder="Last Name*" />
       </View>
 
       <View style={styles.inputContainer}>
@@ -89,13 +89,12 @@ const styles = StyleSheet.create({
   },
   label: {
     marginBottom: 5,
-    color: '#555',
+    color: '#b9babd',
   },
   input: {
     height: 40,
-    borderColor: '#ccc',
-    borderWidth: 1,
-    borderRadius: 5,
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
     paddingHorizontal: 10,
   },
   button: {
