@@ -51,11 +51,6 @@ export default function Signin() {
         <Text style={styles.label}>Password</Text>
         <TextInput style={styles.input} placeholder="Password" secureTextEntry />
       </View>
-
-      <View style={styles.inputContainer}>
-        <Text style={styles.label}>Confirm Password</Text>
-        <TextInput style={styles.input} placeholder="Confirm Password" secureTextEntry />
-      </View>
       
       <TouchableOpacity style={styles.button}  onPress={() => router.push('/home')}>
         <Text style={styles.buttonText}>Continue</Text>
