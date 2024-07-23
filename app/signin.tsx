@@ -49,7 +49,10 @@ export default function Signin() {
 
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Password</Text>
-        <TextInput style={styles.input} placeholder="Password" secureTextEntry />
+        <View style={styles.passwordContainer}>
+          <TextInput style={styles.input} placeholder="Password" secureTextEntry />
+          <Image source={require('../assets/images/eye-24.png')} style={styles.passwordicon} />
+        </View>
       </View>
       
       <TouchableOpacity style={styles.button}  onPress={() => router.push('/home')}>
@@ -110,6 +113,17 @@ const styles = StyleSheet.create({
     width: 28,
     height: 28,
     marginRight: 20,
+  },
+  passwordicon: {
+    width: 28,
+    height: 28,
+    marginLeft: 260,
+  },
+  passwordContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderBottomColor: '#ccc',
+    borderBottomWidth: 1,
   },
   button9: {
     backgroundColor: '#ffffff',
