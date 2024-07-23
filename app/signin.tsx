@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   thirdtopic: {
     fontSize: 13,
-    fontWeight: '400',
+    fontWeight: '500',
     // marginTop:-1,
     color: '#3d67d1',
   },
