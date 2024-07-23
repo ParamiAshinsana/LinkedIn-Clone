@@ -143,10 +143,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
       <View style={styles.separator} />
 
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText}>150 profile views</Text>
+        <Text style={styles.sidebarText1}>150 </Text>
+        <Text style={styles.sidebarText2}>profile views</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText}>View all analytics</Text>
+        <Text style={styles.sidebarText3}>View all analytics</Text>
       </TouchableOpacity>
 
       <View style={styles.separator} />
@@ -184,6 +185,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 20,
     zIndex: 1000, // Ensure it overlays other components
+    marginTop:30,
   },
   profileSection: {
     alignItems: 'center',
@@ -210,8 +212,18 @@ const styles = StyleSheet.create({
   },
   sidebarItem: {
     marginBottom: 10,
+    flexDirection: 'row',
   },
   sidebarText: {
+    fontSize: 16,
+  },
+  sidebarText1: {
+    fontSize: 16,
+  },
+  sidebarText2: {
+    fontSize: 16,
+  },
+  sidebarText3: {
     fontSize: 16,
   },
   settings: {
