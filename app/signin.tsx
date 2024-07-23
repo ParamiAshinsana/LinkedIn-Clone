@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
-import {Link, router } from 'expo-router';
+import { Link, router } from 'expo-router';
 
 export default function Signin() {
   return (
@@ -20,31 +20,35 @@ export default function Signin() {
       </View>
 
       <View>
-      <TouchableOpacity style={styles.button9}>
-      <Image source={require('../assets/images/google-48.png')} style={styles.icon} />
-        <Text style={styles.buttonText9}>Sign in with Google</Text>
-      </TouchableOpacity>
+        <TouchableOpacity style={styles.button9}>
+          <Image source={require('../assets/images/google-48.png')} style={styles.icon} />
+          <Text style={styles.buttonText9}>Sign in with Google</Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button9}>
-      <Image source={require('../assets/images/apple-logo-50.png')} style={styles.icon} />
-        <Text style={styles.buttonText9}>Sign in with Apple</Text>
-      </TouchableOpacity>
-      
-      <TouchableOpacity style={styles.button9}>
-      <Image source={require('../assets/images/facebook-48.png')} style={styles.icon} />
-        <Text style={styles.buttonText9}>Sign in with Facebook</Text>
-      </TouchableOpacity>
+        <TouchableOpacity style={styles.button9}>
+          <Image source={require('../assets/images/apple-logo-50.png')} style={styles.icon} />
+          <Text style={styles.buttonText9}>Sign in with Apple</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.button9}>
+          <Image source={require('../assets/images/facebook-48.png')} style={styles.icon} />
+          <Text style={styles.buttonText9}>Sign in with Facebook</Text>
+        </TouchableOpacity>
       </View>
 
       <View style={styles.separatorContainer}>
-          <View style={styles.separatorLine}></View>
-          <Text style={styles.separatorText}>or</Text>
-          <View style={styles.separatorLine}></View>
-        </View>
+        <View style={styles.separatorLine}></View>
+        <Text style={styles.separatorText}>or</Text>
+        <View style={styles.separatorLine}></View>
+      </View>
 
+      <View style={styles.bottomContainer}>
+
+
+      </View>
       <View style={styles.inputContainer}>
-        <Text style={styles.label}>Email or Phone Number</Text>
-        <TextInput style={styles.input} placeholder="Email or Phone Number" keyboardType="email-address" />
+        <Text style={styles.label}>Email or Phone</Text>
+        <TextInput style={styles.input} placeholder="Email or Phone" keyboardType="email-address" />
       </View>
 
       <View style={styles.inputContainer}>
@@ -54,8 +58,8 @@ export default function Signin() {
           <Image source={require('../assets/images/eye-24.png')} style={styles.passwordicon} />
         </View>
       </View>
-      
-      <TouchableOpacity style={styles.button}  onPress={() => router.push('/home')}>
+
+      <TouchableOpacity style={styles.button} onPress={() => router.push('/home')}>
         <Text style={styles.buttonText}>Continue</Text>
       </TouchableOpacity>
     </View>
@@ -81,6 +85,9 @@ const styles = StyleSheet.create({
   separatorText: {
     marginHorizontal: 10,
     color: '#777',
+  },
+  bottomContainer: {
+    marginTop:60,
   },
   header: {
     flexDirection: 'row',
