@@ -22,12 +22,17 @@ export default function Signin() {
       <View>
       <TouchableOpacity style={styles.button9}>
       <Image source={require('../assets/images/google-48.png')} style={styles.icon} />
-        <Text style={styles.buttonText9}>Continue with Google</Text>
+        <Text style={styles.buttonText9}>Sign in with Google</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button9}>
+      <Image source={require('../assets/images/apple-logo-50.png')} style={styles.icon} />
+        <Text style={styles.buttonText9}>Sign in with Apple</Text>
       </TouchableOpacity>
       
       <TouchableOpacity style={styles.button9}>
       <Image source={require('../assets/images/facebook-48.png')} style={styles.icon} />
-        <Text style={styles.buttonText9}>Continue with Facebook</Text>
+        <Text style={styles.buttonText9}>Sign in with Facebook</Text>
       </TouchableOpacity>
       </View>
 
