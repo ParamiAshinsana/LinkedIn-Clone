@@ -168,7 +168,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
         <Text style={styles.settingsText}>Settings</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.closeButton} onPress={onClose}>
-        <FontAwesome name="times" size={24} color="black" />
+        <FontAwesome name="times" size={24} color="grey" />
       </TouchableOpacity>
     </View>
   );
@@ -218,10 +218,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 'auto',
+    marginBottom:20,
   },
   settingsText: {
     marginLeft: 10,
     fontSize: 18,
+    // marginBottom:10,
   },
   closeButton: {
     position: 'absolute',
