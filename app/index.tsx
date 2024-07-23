@@ -8,6 +8,9 @@ export default function FirstPage() {
     <View style={styles.container}>
       <Image source={require('../assets/images/LinkedIn-Logo.png')} style={styles.image} />
       <Text style={styles.title}>Join a trusted community of 1B professionals</Text>
+
+
+      <View style={styles.bottomContainer}>
       <Text style={styles.paragraph}>
         By clicking Agree & Join or Continue,you agree to the LinkedIn User Agreement, Privacy Policy, and Cookie Policy
       </Text>
@@ -27,6 +30,9 @@ export default function FirstPage() {
       </TouchableOpacity>
       
       <Text style={styles.signInText} onPress={() => router.push('/signin')}>Sign in</Text>
+      </View>
+
+      
     </View>
   );
 }
@@ -39,8 +45,15 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: '#fff',
   },
+  bottomContainer: {
+    position: 'absolute',
+    bottom: 40,
+    left: 20,
+    right: 20,
+    alignItems: 'center',
+  },
   image: {
-    width: 300,
+    width: 200,
     height: 100,
     // borderWidth: 2,
     // borderColor: '#000',
@@ -51,7 +64,7 @@ const styles = StyleSheet.create({
     height: 100,
     fontSize: 20,
     fontWeight: '300',
-    marginBottom: 10,
+    marginBottom: 140,
     marginTop:20,
   },
   paragraph: {
