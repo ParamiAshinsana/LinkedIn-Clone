@@ -36,6 +36,12 @@ export default function Signin() {
       </TouchableOpacity>
       </View>
 
+      <View style={styles.separatorContainer}>
+          <View style={styles.separatorLine}></View>
+          <Text style={styles.separatorText}>or</Text>
+          <View style={styles.separatorLine}></View>
+        </View>
+
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Email or Phone Number</Text>
         <TextInput style={styles.input} placeholder="Email or Phone Number" keyboardType="email-address" />
@@ -63,6 +69,20 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#fff',
+  },
+  separatorContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 10,
+  },
+  separatorLine: {
+    flex: 1,
+    height: 1,
+    backgroundColor: '#ccc',
+  },
+  separatorText: {
+    marginHorizontal: 10,
+    color: '#777',
   },
   header: {
     flexDirection: 'row',
