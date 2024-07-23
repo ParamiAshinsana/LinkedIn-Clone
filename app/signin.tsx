@@ -73,9 +73,10 @@ export default function Signin() {
           <Checkbox
             value={agree}
             onValueChange={setAgree}
-            color={agree ? '#3d67d1' : '#b9babd'}
+            color={agree ? '#015402' : '#b9babd'}
           />
-          <Text style={styles.checkboxLabel}>I agree to the Terms and Conditions</Text>
+          <Text style={styles.checkboxLabel}>Remember me.</Text>
+          <Text style={styles.checkboxLabel2}>Learn more</Text>
         </View>
       </View>
 
@@ -200,7 +201,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   checkboxLabel: {
-    marginLeft: 10,
+    marginLeft: 9.5,
     color: '#777',
+  },
+  checkboxLabel2: {
+    marginLeft: 9.5,
+    color: '#3d67d1',
   },
 });
