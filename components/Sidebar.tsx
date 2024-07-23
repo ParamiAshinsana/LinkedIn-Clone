@@ -133,7 +133,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
   if (!isVisible) return null;
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} >
       <View style={styles.profileSection}>
         <Image source={require('../assets/images/my-profile-image.jpg')} style={styles.profileImage} />
         <Text style={styles.profileName}>Parami Ashinsana</Text>
@@ -143,7 +143,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
       <View style={styles.separator} />
 
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText1}>150 </Text>
+        <Text style={styles.sidebarText1}>153 </Text>
         <Text style={styles.sidebarText2}>profile views</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.sidebarItem}>
@@ -163,6 +163,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
       </TouchableOpacity>
 
       <View style={styles.separator} />
+
+      <View>
+      <Image source={require('../assets/images/LinkedIn-Premium.jpg')} style={styles.LinkedInimg} />
+      </View>
 
       <TouchableOpacity style={styles.settings} onPress={onClose}>
         <FontAwesome name="cog" size={24} color="black" />
@@ -185,7 +189,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     padding: 20,
     zIndex: 1000, // Ensure it overlays other components
-    marginTop:30,
+    marginTop: 30,
   },
   profileSection: {
     alignItems: 'center',
@@ -196,6 +200,12 @@ const styles = StyleSheet.create({
     height: 80,
     borderRadius: 40,
     marginBottom: 10,
+  },
+  LinkedInimg: {
+    width: 200,
+    height: 100,
+    borderRadius: 5,
+    marginTop: 170,
   },
   profileName: {
     fontSize: 18,
@@ -215,22 +225,29 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   sidebarText: {
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: 'bold',
+    margin: 10,
   },
   sidebarText1: {
-    fontSize: 16,
+    fontSize: 14,
+    fontWeight: '900',
   },
   sidebarText2: {
     fontSize: 16,
+    fontWeight: '400',
+    color: '#ababab',
+
   },
   sidebarText3: {
     fontSize: 16,
+    fontWeight: '500',
   },
   settings: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 'auto',
-    marginBottom:20,
+    marginBottom: 60,
   },
   settingsText: {
     marginLeft: 10,
