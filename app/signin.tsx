@@ -19,7 +19,17 @@ export default function Signin() {
         <Text style={styles.thirdtopic}>  Join LinkedIn</Text>
       </View>
 
+      <View>
+      <TouchableOpacity style={styles.button9}>
+      <Image source={require('../assets/images/google-48.png')} style={styles.icon} />
+        <Text style={styles.buttonText9}>Continue with Google</Text>
+      </TouchableOpacity>
       
+      <TouchableOpacity style={styles.button9}>
+      <Image source={require('../assets/images/facebook-48.png')} style={styles.icon} />
+        <Text style={styles.buttonText9}>Continue with Facebook</Text>
+      </TouchableOpacity>
+      </View>
 
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Email or Phone Number</Text>
@@ -75,6 +85,28 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     // marginTop:-1,
     color: '#3d67d1',
+  },
+  icon: {
+    width: 28,
+    height: 28,
+    marginRight: 20,
+  },
+  button9: {
+    backgroundColor: '#ffffff',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 25,
+    borderWidth: 0.5,
+    borderColor: '#050505',
+    marginBottom: 10,
+    width: '100%',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText9: {
+    color: '#050505',
+    fontSize: 17.5,
   },
   inputContainer: {
     marginBottom: 15,
