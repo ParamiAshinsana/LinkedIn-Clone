@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'react-native';
 import { Link, router } from 'expo-router';
+import CheckBox from '@react-native-community/checkbox';
 
 export default function Signin() {
   return (
