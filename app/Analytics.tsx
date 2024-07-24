@@ -149,7 +149,44 @@ export default function Analytics() {
                     </View>
                 </View>
             </View> */}
+
+
             <View style={styles.secondCard}>
+                <View style={styles.secondCardHeader}>
+                    <Text style={styles.cardText3}>Analytics & tools</Text>
+                    <FontAwesome name="question-circle" size={24} color="grey" style={styles.questionIcon}/>
+                </View>
+                <View style={styles.quadCard}>
+                    <View style={styles.quadRow}>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>1464</Text>
+                            <Text style={styles.quadText2}>Post impressions</Text>
+                            <Text style={styles.quadText3}>🔻58.9% past 7 days</Text>
+                        </View>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>3678</Text>
+                            <Text style={styles.quadText2}>Followers</Text>
+                            <Text style={styles.quadText3}>🔺51.6% past 7 days</Text>
+                        </View>
+                    </View>
+                    <View style={styles.quadRow}>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>297</Text>
+                            <Text style={styles.quadText2}>Profile viewers</Text>
+                            <Text style={styles.quadText3}>Past 90 days</Text>
+                        </View>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>364</Text>
+                            <Text style={styles.quadText2}>Search appearances</Text>
+                            <Text style={styles.quadText3}>Previous week</Text>
+                        </View>
+                    </View>
+                </View>
+            </View>
+
+
+
+            <View style={styles.thirdCard}>
                 <View style={styles.secondCardHeader}>
                     <Text style={styles.cardText3}>Analytics & tools</Text>
                     <FontAwesome name="question-circle" size={24} color="grey" style={styles.questionIcon}/>
@@ -259,6 +296,17 @@ const styles = StyleSheet.create({
     //     backgroundColor: '#ffffff',
     // },
     secondCard: {
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowRadius: 10,
+        elevation: 5,
+        // marginHorizontal: 20, // Center the card with equal margin on both sides
+        padding: 20,
+    },
+    thirdCard: {
+        marginTop:10,
         backgroundColor: '#fff',
         borderRadius: 10,
         shadowColor: '#000',
