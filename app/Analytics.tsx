@@ -154,7 +154,7 @@ export default function Analytics() {
             <View style={styles.secondCard}>
                 <View style={styles.secondCardHeader}>
                     <Text style={styles.cardText3}>Analytics & tools</Text>
-                    <FontAwesome name="question-circle" size={24} color="grey" style={styles.questionIcon}/>
+                    <FontAwesome name="question-circle" size={24} color="grey" style={styles.questionIcon} />
                 </View>
                 <View style={styles.quadCard}>
                     <View style={styles.quadRow}>
@@ -188,35 +188,33 @@ export default function Analytics() {
 
             <View style={styles.thirdCard}>
                 <View style={styles.secondCardHeader}>
-                    <Text style={styles.cardText3}>Analytics & tools</Text>
-                    <FontAwesome name="question-circle" size={24} color="grey" style={styles.questionIcon}/>
+                    <Text style={styles.thirdTopic}>Creation tools</Text>
                 </View>
-                <View style={styles.quadCard}>
-                    <View style={styles.quadRow}>
-                        <View style={styles.quadBox}>
-                            <Text style={styles.quadText1}>1464</Text>
-                            <Text style={styles.quadText2}>Post impressions</Text>
-                            <Text style={styles.quadText3}>🔻58.9% past 7 days</Text>
-                        </View>
-                        <View style={styles.quadBox}>
-                            <Text style={styles.quadText1}>3678</Text>
-                            <Text style={styles.quadText2}>Followers</Text>
-                            <Text style={styles.quadText3}>🔺51.6% past 7 days</Text>
-                        </View>
-                    </View>
-                    <View style={styles.quadRow}>
-                        <View style={styles.quadBox}>
-                            <Text style={styles.quadText1}>297</Text>
-                            <Text style={styles.quadText2}>Profile viewers</Text>
-                            <Text style={styles.quadText3}>Past 90 days</Text>
-                        </View>
-                        <View style={styles.quadBox}>
-                            <Text style={styles.quadText1}>364</Text>
-                            <Text style={styles.quadText2}>Search appearances</Text>
-                            <Text style={styles.quadText3}>Previous week</Text>
-                        </View>
-                    </View>
+
+                <View style={styles.firstLine}>
+                    <Text style={styles.paragraphText}>Get more ways to start conversaions with your community.Learn more
+                        about creation tool access.
+                    </Text>
                 </View>
+
+                <View style={styles.secondLine}>
+
+                    <View style={styles.secondRow}>
+                        <Text style={styles.paragraphText}>LInkedIn Live</Text>
+                        {/* <View>
+                        <FontAwesome name="times-circle-o" size={24} color="grey"/>
+                        <Text style={styles.paragraphText}>LInkedIn Live</Text>
+                        </View> */}
+                    </View>
+
+
+                    <View >
+                        <Text style={styles.paragraphText}>Audio Event</Text>
+                    </View>
+
+
+                </View>
+
             </View>
 
 
@@ -239,8 +237,8 @@ const styles = StyleSheet.create({
         marginLeft: 10,
     },
     questionIcon: {
-        marginRight:200,
-        marginBottom:20,
+        marginRight: 200,
+        marginBottom: 20,
     },
     card: {
         flexDirection: 'row',
@@ -306,7 +304,7 @@ const styles = StyleSheet.create({
         padding: 20,
     },
     thirdCard: {
-        marginTop:10,
+        marginTop: 10,
         backgroundColor: '#fff',
         borderRadius: 10,
         shadowColor: '#000',
@@ -332,7 +330,7 @@ const styles = StyleSheet.create({
         borderWidth: 0.7,
         justifyContent: 'center',
         alignItems: 'center',
-        margin:10,
+        margin: 10,
         borderRadius: 5,
     },
     // quadText: {
@@ -349,5 +347,22 @@ const styles = StyleSheet.create({
         fontSize: 12,
         color: '#999999',
     },
+    thirdTopic: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    paragraphText: {
+        fontSize: 14,
+    },
+    firstLine: {
+        alignItems: 'center',
+    },
+    secondLine: {
+        alignItems: 'center',
+    },
+    secondRow:{
+      flexDirection:'row',
+    },
+    
 });
 
