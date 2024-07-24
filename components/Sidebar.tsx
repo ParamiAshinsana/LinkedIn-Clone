@@ -165,7 +165,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
       <View style={styles.separator} />
 
       <View>
-      <Image source={require('../assets/images/LinkedIn-Premium.jpg')} style={styles.LinkedInimg} />
+        <Image source={require('../assets/images/LinkedIn-Premium.jpg')} style={styles.LinkedInimg} />
       </View>
 
       <TouchableOpacity style={styles.settings} onPress={onClose}>
