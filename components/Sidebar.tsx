@@ -119,6 +119,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import {Link, router } from 'expo-router';
 
 const { width, height } = Dimensions.get('window');
 
@@ -147,7 +148,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
         <Text style={styles.sidebarText2}>profile views</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText3}>View all analytics</Text>
+        <Text style={styles.sidebarText3}  onPress={() => router.push('/analytics')}>View all analytics</Text>
       </TouchableOpacity>
 
       <View style={styles.separator} />
