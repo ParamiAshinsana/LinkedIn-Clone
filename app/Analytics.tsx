@@ -110,107 +110,196 @@ import { FontAwesome } from '@expo/vector-icons';
 const { width } = Dimensions.get('window');
 
 export default function Analytics() {
-  return (
-    <View style={styles.container}>
-        {/* Original */}
-      {/* <FontAwesome name="arrow-left" size={24} color="grey" style={styles.backIcon} /> */}
-      <View style={styles.card}>
-        
-        <View style={styles.textContainer}>
-        <FontAwesome name="arrow-left" size={24} color="grey" style={styles.backIcon} />
-          <Text style={styles.cardText1}>Analytics & tools</Text>
-          <Text style={styles.cardText2}>Last 30 days</Text>
+    return (
+        <View style={styles.container}>
+            {/* Original */}
+            {/* <FontAwesome name="arrow-left" size={24} color="grey" style={styles.backIcon} /> */}
+            <View style={styles.card}>
+
+                <View style={styles.textContainer}>
+                    <FontAwesome name="arrow-left" size={24} color="grey" style={styles.backIcon} />
+                    <Text style={styles.cardText1}>Analytics & tools</Text>
+                    <Text style={styles.cardText2}>Last 30 days</Text>
+                </View>
+                <Image source={require('../assets/images/my-profile-image.jpg')} style={styles.profileImage} />
+            </View>
+
+
+
+
+            {/* <View style={styles.secondCard}>
+            <Text style={styles.cardText3}>Analytics & tools</Text>
+            <FontAwesome name="questionmark" size={24} color="grey"/>
+                <View style={styles.quadCard}>
+                    <View style={styles.quadRow}>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText}>Text 1</Text>
+                        </View>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText}>Text 2</Text>
+                        </View>
+                    </View>
+                    <View style={styles.quadRow}>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText}>Text 3</Text>
+                        </View>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText}>Text 4</Text>
+                        </View>
+                    </View>
+                </View>
+            </View> */}
+            <View style={styles.secondCard}>
+                <View style={styles.secondCardHeader}>
+                    <Text style={styles.cardText3}>Analytics & tools</Text>
+                    <FontAwesome name="question-circle" size={24} color="grey" style={styles.questionIcon}/>
+                </View>
+                <View style={styles.quadCard}>
+                    <View style={styles.quadRow}>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>1464</Text>
+                            <Text style={styles.quadText2}>Post impressions</Text>
+                            <Text style={styles.quadText3}>🔻58.9% past 7 days</Text>
+                        </View>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>3678</Text>
+                            <Text style={styles.quadText2}>Followers</Text>
+                            <Text style={styles.quadText3}>🔺51.6% past 7 days</Text>
+                        </View>
+                    </View>
+                    <View style={styles.quadRow}>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>297</Text>
+                            <Text style={styles.quadText2}>Profile viewers</Text>
+                            <Text style={styles.quadText3}>Past 90 days</Text>
+                        </View>
+                        <View style={styles.quadBox}>
+                            <Text style={styles.quadText1}>364</Text>
+                            <Text style={styles.quadText2}>Search appearances</Text>
+                            <Text style={styles.quadText3}>Previous week</Text>
+                        </View>
+                    </View>
+                </View>
+            </View>
+
+
+
+
+
         </View>
-        <Image source={require('../assets/images/my-profile-image.jpg')} style={styles.profileImage} />
-      </View>
-      <View style={styles.quadCard}>
-        <View style={styles.quadRow}>
-          <View style={styles.quadBox}>
-            <Text style={styles.quadText}>Text 1</Text>
-          </View>
-          <View style={styles.quadBox}>
-            <Text style={styles.quadText}>Text 2</Text>
-          </View>
-        </View>
-        <View style={styles.quadRow}>
-          <View style={styles.quadBox}>
-            <Text style={styles.quadText}>Text 3</Text>
-          </View>
-          <View style={styles.quadBox}>
-            <Text style={styles.quadText}>Text 4</Text>
-          </View>
-        </View>
-      </View>
-    </View>
-  );
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // padding: 20,
-    backgroundColor: '#f0f0f0',
-    paddingTop:40,
-  },
-  backIcon: {
-    marginBottom: 40, // Add some space below the icon
-    marginLeft:10,
-  },
-  card: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    padding: 20,
-    borderRadius: 10,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 10,
-    elevation: 5,
-    marginBottom: 20,
-  },
-  textContainer: {
-    flex: 1,
-  },
-//   cardText: {
-//     fontSize: 16,
-//     marginBottom: 5,
-//   },
-  cardText1: {
-    fontSize: 20,
-    marginBottom: 5,
-    fontWeight: 'bold',
-  },
-  cardText2: {
-    fontSize: 14,
-    marginBottom: 5,
-  },
-  profileImage: {
-    width: 60,
-    height: 60,
-    borderRadius: 25,
-    marginTop:60,
-  },
-  quadCard: {
-    backgroundColor: '#fff',
-    borderRadius: 10,
-    shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 10,
-    elevation: 5,
-  },
-  quadRow: {
-    flexDirection: 'row',
-  },
-  quadBox: {
-    flex: 1,
-    padding: 20,
-    borderColor: '#ddd',
-    borderWidth: 0.5,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  quadText: {
-    fontSize: 16,
-  },
+    container: {
+        flex: 1,
+        // padding: 20,
+        backgroundColor: '#f0f0f0',
+        paddingTop: 40,
+    },
+    backIcon: {
+        marginBottom: 40, // Add some space below the icon
+        marginLeft: 10,
+    },
+    questionIcon: {
+        marginRight:200,
+        marginBottom:20,
+    },
+    card: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#fff',
+        padding: 20,
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowRadius: 10,
+        elevation: 5,
+        marginBottom: 20,
+    },
+    textContainer: {
+        flex: 1,
+    },
+    //   cardText: {
+    //     fontSize: 16,
+    //     marginBottom: 5,
+    //   },
+    cardText1: {
+        fontSize: 20,
+        marginBottom: 5,
+        fontWeight: 'bold',
+    },
+    cardText2: {
+        fontSize: 14,
+        marginBottom: 5,
+    },
+    cardText3: {
+        fontSize: 20,
+        marginBottom: 20,
+        fontWeight: 'bold',
+    },
+    profileImage: {
+        width: 60,
+        height: 60,
+        borderRadius: 25,
+        marginTop: 60,
+    },
+    quadCard: {
+        // backgroundColor: '#fff',
+        // borderRadius: 10,
+        // shadowColor: '#000',
+        // shadowOpacity: 0.1,
+        // shadowRadius: 10,
+        // elevation: 5,
+    },
+    // secondCard: {
+    //     padding: 30,
+    //     borderColor: '#ddd',
+    //     borderWidth: 0.5,
+    //     backgroundColor: '#ffffff',
+    // },
+    secondCard: {
+        backgroundColor: '#fff',
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowRadius: 10,
+        elevation: 5,
+        // marginHorizontal: 20, // Center the card with equal margin on both sides
+        padding: 20,
+    },
+    secondCardHeader: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 10,
+    },
+    quadRow: {
+        flexDirection: 'row',
+    },
+    quadBox: {
+        flex: 1,
+        padding: 20,
+        borderColor: '#ddd',
+        borderWidth: 0.7,
+        justifyContent: 'center',
+        alignItems: 'center',
+        margin:10,
+        borderRadius: 5,
+    },
+    // quadText: {
+    //     fontSize: 16,
+    // },
+    quadText1: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    quadText2: {
+        fontSize: 14,
+    },
+    quadText3: {
+        fontSize: 12,
+        color: '#999999',
+    },
 });
 
