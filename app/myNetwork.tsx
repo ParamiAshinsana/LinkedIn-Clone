@@ -12,14 +12,40 @@ const MyNetwork: React.FC = () => {
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollView}>
-        {Array(5).fill(null).map((_, index) => (
-          <View style={styles.manageNetworkBox} key={index}>
-            <Text style={styles.manageNetworkText}>Manage my network</Text>
-            <TouchableOpacity onPress={handleManageNetwork}>
-              <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
-            </TouchableOpacity>
-          </View>
-        ))}
+        <View style={styles.manageNetworkBox}>
+          <Text style={styles.manageNetworkText}>Manage my network</Text>
+          <TouchableOpacity onPress={handleManageNetwork}>
+            <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.manageNetworkBox}>
+          <Text style={styles.manageNetworkText}>Manage my network</Text>
+          <TouchableOpacity onPress={handleManageNetwork}>
+            <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.manageNetworkBox}>
+          <Text style={styles.manageNetworkText}>Manage my network</Text>
+          <TouchableOpacity onPress={handleManageNetwork}>
+            <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.manageNetworkBox}>
+          <Text style={styles.manageNetworkText}>Manage my network</Text>
+          <TouchableOpacity onPress={handleManageNetwork}>
+            <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.manageNetworkBox}>
+          <Text style={styles.manageNetworkText}>Manage my network</Text>
+          <TouchableOpacity onPress={handleManageNetwork}>
+            <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          </TouchableOpacity>
+        </View>
       </ScrollView>
     </View>
   );
@@ -58,3 +84,4 @@ const styles = StyleSheet.create({
 });
 
 export default MyNetwork;
+
