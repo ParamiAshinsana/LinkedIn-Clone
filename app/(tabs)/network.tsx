@@ -94,6 +94,7 @@ const Network: React.FC = () => {
       mutualConnections: '5 mutual connections',
       timeAgo: '2 days ago',
     },
+    
     // Add more invitations as needed...
   ];
 
