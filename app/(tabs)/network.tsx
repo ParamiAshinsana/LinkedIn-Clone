@@ -76,6 +76,7 @@ import { View, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-nati
 import Header from '../../components/Header';
 import InvitationCard from '../../components/InvitationCard';
 import { FontAwesome } from '@expo/vector-icons';
+import { router } from 'expo-router';
 
 const Network: React.FC = () => {
   const invitations = [
@@ -103,11 +104,27 @@ const Network: React.FC = () => {
   const handleAccept = () => {
     console.log('Invitation accepted!');
   };
+  const handleManageNetwork = () => {
+    console.log('Manage network!');
+    router.push('/myNetwork');
+  };
+
+  const handleManageInvitation = () => {
+    console.log('Manage network!');
+    router.push('/invitations');
+    
+  };
 
   return (
     <View style={styles.container}>
       <Header />
       <ScrollView contentContainerStyle={styles.scrollView}>
+      <View style={styles.manageInvitationBox}>
+          <Text style={styles.manageInvitationText}>Invitations (119)</Text>
+          <TouchableOpacity onPress={handleManageInvitation}>
+            <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          </TouchableOpacity>
+        </View>
         {invitations.map((invitation, index) => (
           <InvitationCard
             key={index}
@@ -122,7 +139,9 @@ const Network: React.FC = () => {
         ))}
         <View style={styles.manageNetworkBox}>
           <Text style={styles.manageNetworkText}>Manage my network</Text>
-          <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          <TouchableOpacity onPress={handleManageNetwork}>
+            <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
+          </TouchableOpacity>
         </View>
       </ScrollView>
     </View>
@@ -154,6 +173,24 @@ const styles = StyleSheet.create({
     marginTop:5,
   },
   manageNetworkText: {
+    fontSize: 16,
+    color: '#333',
+  },
+  manageInvitationBox: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    padding: 15,
+    // margin: 10,
+    borderRadius: 2,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 5,
+    marginTop:5,
+  },
+  manageInvitationText: {
     fontSize: 16,
     color: '#333',
   },
