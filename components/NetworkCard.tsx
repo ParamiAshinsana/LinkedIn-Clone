@@ -26,7 +26,7 @@ const NetworkCard: React.FC<NetworkCardProps> = ({
       <Text style={styles.profileName}>{profileName}</Text>
       <Text style={styles.profilePosition}>{position}</Text>
       <View style={styles.mutualConnectionsContainer}>
-        <Image source={require('../../assets/images/Profile-Picture1.jpg')} style={styles.smallProfileImage} />
+        <Image source={require('../assets/images/Profile-Picture1.jpg')} style={styles.smallProfileImage} />
         <Text style={styles.mutualConnectionsText}>{mutualConnections}</Text>
       </View>
       <TouchableOpacity style={styles.connectButton} onPress={onConnect}>
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 90,
+    marginTop: 150,
   },
   profilePosition: {
     fontSize: 14,
@@ -88,21 +88,27 @@ const styles = StyleSheet.create({
     height: 20,
     borderRadius: 10,
     marginRight: 5,
+    
   },
   mutualConnectionsText: {
     fontSize: 12,
     color: '#666',
+    
   },
   connectButton: {
-    backgroundColor: '#0073b1',
-    borderRadius: 5,
+    backgroundColor: '#fff',
+    borderRadius: 15,
     paddingVertical: 10,
     alignItems: 'center',
     marginBottom: 10,
+    marginLeft:10,
+    marginRight:10,
+    borderWidth: 0.5,
+    borderColor: '#0073b1', 
   },
   connectButtonText: {
     fontSize: 14,
-    color: '#fff',
+    color: '#0073b1',
     fontWeight: 'bold',
   },
 });
