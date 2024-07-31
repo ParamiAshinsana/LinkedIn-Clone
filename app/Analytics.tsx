@@ -167,7 +167,7 @@ export default function Analytics() {
                 </View>
 
                 <View style={styles.firstLine}>
-                    <Text style={styles.paragraphText}>Get more ways to start conversations with your community. Learn more about creation tool access.</Text>
+                    <Text>Get more ways to start conversations with your community. Learn more about creation tool access.</Text>
                 </View>
 
                 <View style={styles.secondLine}>
