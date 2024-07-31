@@ -167,7 +167,7 @@ export default function Analytics() {
                 </View>
 
                 <View style={styles.firstLine}>
-                    <Text>Get more ways to start conversations with your community. Learn more about creation tool access.</Text>
+                    <Text>Get more ways to start conversations with your community Learn more about creation tool access.</Text>
                 </View>
 
                 <View style={styles.secondLine}>
@@ -310,6 +310,7 @@ const styles = StyleSheet.create({
     },
     firstLine: {
         marginBottom: 10,
+        // flexDirection: 'row',
     },
     secondLine: {
         marginTop: 10,
