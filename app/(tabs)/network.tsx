@@ -72,7 +72,7 @@
 
 
 import React from 'react';
-import { View, ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { View, ScrollView, StyleSheet, Text, TouchableOpacity, Image } from 'react-native';
 import Header from '../../components/Header';
 import InvitationCard from '../../components/InvitationCard';
 import { FontAwesome } from '@expo/vector-icons';
@@ -104,27 +104,28 @@ const Network: React.FC = () => {
   const handleAccept = () => {
     console.log('Invitation accepted!');
   };
+
   const handleManageNetwork = () => {
     console.log('Manage network!');
     router.push('/myNetwork');
   };
 
   const handleManageInvitation = () => {
-    console.log('Manage network!');
+    console.log('Manage invitations!');
     router.push('/invitations');
-    
   };
 
   return (
     <View style={styles.container}>
       <Header />
       <ScrollView contentContainerStyle={styles.scrollView}>
-      <View style={styles.manageInvitationBox}>
+        <View style={styles.manageInvitationBox}>
           <Text style={styles.manageInvitationText}>Invitations (119)</Text>
           <TouchableOpacity onPress={handleManageInvitation}>
             <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
           </TouchableOpacity>
         </View>
+
         {invitations.map((invitation, index) => (
           <InvitationCard
             key={index}
@@ -137,11 +138,38 @@ const Network: React.FC = () => {
             onAccept={handleAccept}
           />
         ))}
+
         <View style={styles.manageNetworkBox}>
           <Text style={styles.manageNetworkText}>Manage my network</Text>
           <TouchableOpacity onPress={handleManageNetwork}>
             <FontAwesome name="angle-right" size={24} color="grey" style={styles.manageNetworkIcon} />
           </TouchableOpacity>
+        </View>
+
+        <View style={styles.customBox}>
+          <View style={styles.headerContainer}>
+            <Text style={styles.headerText}>Job search smarter</Text>
+            <TouchableOpacity onPress={handleManageNetwork}>
+              <FontAwesome name="close" size={24} color="grey" />
+            </TouchableOpacity>
+          </View>
+
+          <Text style={styles.descriptionText}>
+            Here is a description of the box. It contains details relevant to job searching.
+          </Text>
+
+          <View style={styles.profileContainer}>
+            <Image source={require('../../assets/images/Profile-Picture1.jpg')} style={styles.profileImage} />
+            <Image source={require('../../assets/images/Profile-Picture2.jpg')} style={styles.profileImage} />
+            <Image source={require('../../assets/images/Profile-Picture3.jpg')} style={styles.profileImage} />
+            <Text style={styles.profileText}>3 profiles matched</Text>
+          </View>
+
+          <TouchableOpacity style={styles.button} onPress={handleManageNetwork}>
+            <Text style={styles.buttonText}>Try Premium for LKR0</Text>
+          </TouchableOpacity>
+
+          <Text style={styles.smallText}>Unlock more features with Premium</Text>
         </View>
       </ScrollView>
     </View>
@@ -164,13 +192,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     padding: 15,
-    // margin: 10,
     borderRadius: 2,
     shadowColor: '#000',
     shadowOpacity: 0.1,
     shadowRadius: 10,
     elevation: 5,
-    marginTop:5,
+    marginTop: 5,
   },
   manageNetworkText: {
     fontSize: 16,
@@ -182,13 +209,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fff',
     padding: 15,
-    // margin: 10,
     borderRadius: 2,
     shadowColor: '#000',
     shadowOpacity: 0.1,
     shadowRadius: 10,
     elevation: 5,
-    marginTop:5,
+    marginTop: 5,
   },
   manageInvitationText: {
     fontSize: 16,
@@ -197,9 +223,69 @@ const styles = StyleSheet.create({
   manageNetworkIcon: {
     marginLeft: 10,
   },
+  customBox: {
+    backgroundColor: '#fff',
+    borderRadius: 5,
+    padding: 15,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 5,
+    marginVertical: 10,
+  },
+  headerContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  headerText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  descriptionText: {
+    fontSize: 14,
+    color: '#666',
+    marginBottom: 10,
+  },
+  profileContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+  },
+  profileImage: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    marginRight: 5,
+  },
+  profileText: {
+    fontSize: 14,
+    color: '#666',
+    marginLeft: 10,
+  },
+  button: {
+    backgroundColor: '#ffcc00',
+    borderRadius: 5,
+    paddingVertical: 10,
+    alignItems: 'center',
+    marginBottom: 5,
+  },
+  buttonText: {
+    fontSize: 16,
+    color: '#333',
+    fontWeight: 'bold',
+  },
+  smallText: {
+    fontSize: 12,
+    color: '#999',
+    textAlign: 'center',
+  },
 });
 
 export default Network;
+
 
 
 
