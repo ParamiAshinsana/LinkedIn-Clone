@@ -155,21 +155,21 @@ const Network: React.FC = () => {
           </View>
 
           <Text style={styles.descriptionText}>
-            Here is a description of the box. It contains details relevant to job searching.
+           See who's viewed your profile and directly message recruiters with InMail
           </Text>
 
           <View style={styles.profileContainer}>
             <Image source={require('../../assets/images/Profile-Picture1.jpg')} style={styles.profileImage} />
             <Image source={require('../../assets/images/Profile-Picture2.jpg')} style={styles.profileImage} />
             <Image source={require('../../assets/images/Profile-Picture3.jpg')} style={styles.profileImage} />
-            <Text style={styles.profileText}>3 profiles matched</Text>
+            <Text style={styles.profileText}>Stephon Jorge and millions of other members use Premium</Text>
           </View>
 
           <TouchableOpacity style={styles.button} onPress={handleManageNetwork}>
             <Text style={styles.buttonText}>Try Premium for LKR0</Text>
           </TouchableOpacity>
 
-          <Text style={styles.smallText}>Unlock more features with Premium</Text>
+          <Text style={styles.smallText}>1-month free trail Cancel anytime</Text>
         </View>
       </ScrollView>
     </View>
@@ -261,13 +261,13 @@ const styles = StyleSheet.create({
     marginRight: 5,
   },
   profileText: {
-    fontSize: 14,
+    fontSize: 11,
     color: '#666',
     marginLeft: 10,
   },
   button: {
-    backgroundColor: '#ffcc00',
-    borderRadius: 5,
+    backgroundColor: '#fccc79',
+    borderRadius: 10,
     paddingVertical: 10,
     alignItems: 'center',
     marginBottom: 5,
@@ -278,7 +278,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   smallText: {
-    fontSize: 12,
+    fontSize: 11,
     color: '#999',
     textAlign: 'center',
   },
