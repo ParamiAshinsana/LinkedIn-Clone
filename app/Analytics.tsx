@@ -109,15 +109,18 @@
 
 
 import React from 'react';
-import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, Image, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
+import { router, useRouter } from 'expo-router';
 
 const { width } = Dimensions.get('window');
 
 export default function Analytics() {
     return (
         <View style={styles.container}>
-            <FontAwesome name="arrow-left" size={24} color="grey" style={styles.backIcon} />
+            <TouchableOpacity onPress={() => router.back()}>
+                <FontAwesome name="arrow-left" size={24} color="grey" style={styles.backIcon} />
+            </TouchableOpacity>
             <View style={styles.card}>
                 <View style={styles.textContainer}>
                     <Text style={styles.cardText1}>
