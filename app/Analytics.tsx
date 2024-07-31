@@ -173,16 +173,16 @@ export default function Analytics() {
                 <View style={styles.secondLine}>
                     <View style={styles.secondRow}>
                         <Text style={styles.paragraphText}>LinkedIn Live</Text>
-                        <FontAwesome name="times-circle-o" size={24} color="grey" style={styles.icon} />
+                        <FontAwesome name="info-circle" size={20} color="grey" style={styles.icon} />
                         <Text style={styles.paragraphText1}>Learn more</Text>
-                        <FontAwesome name="arrow-right" size={24} color="grey" style={styles.icon} />
+                        <FontAwesome name="angle-right" size={24} color="grey" style={styles.icon} />
                     </View>
 
                     <View style={styles.secondRow}>
                         <Text style={styles.paragraphText}>Audio Event</Text>
-                        <FontAwesome name="times-circle-o" size={24} color="grey" style={styles.icon} />
+                        <FontAwesome name="info-circle" size={20} color="grey" style={styles.icon} />
                         <Text style={styles.paragraphText1}>Learn more</Text>
-                        <FontAwesome name="arrow-right" size={24} color="grey" style={styles.icon} />
+                        <FontAwesome name="angle-right" size={24} color="grey" style={styles.icon} />
                     </View>
                 </View>
             </View>
@@ -225,7 +225,8 @@ const styles = StyleSheet.create({
         marginRight: 10,
     },
     questionIcon: {
-        marginLeft: 5,
+        marginRight: 170,
+        marginBottom:20,
     },
     cardText2: {
         fontSize: 14,
