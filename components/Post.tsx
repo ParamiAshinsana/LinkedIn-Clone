@@ -27,13 +27,14 @@ const Post: React.FC<PostProps> = ({
   onRepost,
   onSend,
 }) => {
+  
     return (
         <View style={styles.postContainer}>
           <View style={styles.header}>
             <Image source={profileImage} style={styles.profileImage} />
             <View style={styles.headerText}>
               <Text style={styles.profileName}>{profileName}</Text>
-            </View>
+          </View> 
             <TouchableOpacity style={styles.followButton}>
               <Text style={styles.followButtonText}>+ Follow</Text>
             </TouchableOpacity>
