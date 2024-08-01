@@ -134,11 +134,14 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
   if (!isVisible) return null;
 
   return (
-    <View style={styles.container} >
+    <View style={styles.container}>
+      <TouchableOpacity style={styles.closeButton} onPress={onClose}>
+        <FontAwesome name="times" size={24} color="grey" />
+      </TouchableOpacity>
       <View style={styles.profileSection}>
         <Image source={require('../assets/images/my-profile-image.jpg')} style={styles.profileImage} />
         <Text style={styles.profileName}>Parami Ashinsana</Text>
-        <Text style={styles.viewProfile}>View Profile</Text>
+        <Text style={styles.viewProfile} onPress={() => router.push('/myProfile')}>View Profile</Text>
       </View>
 
       <View style={styles.separator} />
@@ -148,7 +151,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
         <Text style={styles.sidebarText2}>profile views</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.sidebarItem}>
-        <Text style={styles.sidebarText3}  onPress={() => router.push('/analytics')}>View all analytics</Text>
+        <Text style={styles.sidebarText3} onPress={() => router.push('/analytics')}>View all analytics</Text>
       </TouchableOpacity>
 
       <View style={styles.separator} />
@@ -172,9 +175,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isVisible, onClose }) => {
       <TouchableOpacity style={styles.settings} onPress={onClose}>
         <FontAwesome name="cog" size={24} color="black" />
         <Text style={styles.settingsText}>Settings</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.closeButton} onPress={onClose}>
-        <FontAwesome name="times" size={24} color="grey" />
       </TouchableOpacity>
     </View>
   );

@@ -6,29 +6,109 @@ import Header from '../../components/Header';
 const NotificationPage: React.FC = () => {
   const notifications = [
     {
-      profileImage: require('../../assets/images/my-profile-image.jpg'),
+      profileImage: require('../../assets/images/google-48.png'),
       description: 'Sundar Pichai has endorsed your skills in "Machine Learning" and "Data Science". He mentioned that your recent project on predictive analytics was impressive.',
       time: '2h',
     },
     {
-      profileImage: require('../../assets/images/my-profile-image.jpg'),
-      description: 'Jane Smith commented on your photo.',
+      profileImage: require('../../assets/images/img1.jpg'),
+      description: 'Satya Nadella liked your recent post about the impact of AI on cloud computing. He commented that your insights into Azure s new features were spot-on.',
       time: '5h',
     },
     {
-      profileImage: require('../../assets/images/my-profile-image.jpg'),
-      description: 'Alice Johnson sent you a message.',
+      profileImage: require('../../assets/images/microsoft.png'),
+      description: 'Satya Nadella liked your recent post about the impact of AI on cloud computing. He commented that your insights into Azure s new features were spot-on.',
+      time: '5h',
+    },
+    {
+      profileImage: require('../../assets/images/Profile-Picture5.jpg'),
+      description: 'Tim Cook commented on your article about the future of augmented reality in consumer technology. He mentioned that your analysis on Apples ARKit advancements was quite insightful.',
       time: '8h',
     },
     {
-      profileImage: require('../../assets/images/my-profile-image.jpg'),
+      profileImage: require('../../assets/images/img6.jpg'),
+      description: 'Tim Cook commented on your article about the future of augmented reality in consumer technology. He mentioned that your analysis on Apples ARKit advancements was quite insightful.',
+      time: '8h',
+    },
+    {
+      profileImage: require('../../assets/images/Profile-Picture2.jpg'),
+      description: 'Charlie Green shared your post.',
+      time: '3d',
+    },
+    {
+      profileImage: require('../../assets/images/Profile-Picture3.jpg'),
+      description: 'Arvind Krishna sent you a connection request with a note saying he was impressed by your work on quantum computing. He is interested in discussing potential collaborations in AI and quantum technologies',
+      time: '1d',
+    },
+    {
+      profileImage: require('../../assets/images/microsoft.png'),
+      description: 'Satya Nadella liked your recent post about the impact of AI on cloud computing. He commented that your insights into Azure s new features were spot-on.',
+      time: '5h',
+    },
+    {
+      profileImage: require('../../assets/images/img4.jpg'),
+      description: 'Tim Cook commented on your article about the future of augmented reality in consumer technology. He mentioned that your analysis on Apples ARKit advancements was quite insightful.',
+      time: '8h',
+    },
+    {
+      profileImage: require('../../assets/images/ibm.png'),
       description: 'Bob Brown started following you.',
       time: '1d',
     },
     {
-      profileImage: require('../../assets/images/my-profile-image.jpg'),
+      profileImage: require('../../assets/images/img3.jpg'),
+      description: 'Satya Nadella liked your recent post about the impact of AI on cloud computing. He commented that your insights into Azure s new features were spot-on.',
+      time: '5h',
+    },
+    {
+      profileImage: require('../../assets/images/img2.jpg'),
+      description: 'Tim Cook commented on your article about the future of augmented reality in consumer technology. He mentioned that your analysis on Apples ARKit advancements was quite insightful.',
+      time: '8h',
+    },
+    {
+      profileImage: require('../../assets/images/Profile-Picture2.jpg'),
       description: 'Charlie Green shared your post.',
       time: '3d',
+    },
+    {
+      profileImage: require('../../assets/images/img1.jpg'),
+      description: 'Arvind Krishna sent you a connection request with a note saying he was impressed by your work on quantum computing. He is interested in discussing potential collaborations in AI and quantum technologies',
+      time: '1d',
+    },
+    {
+      profileImage: require('../../assets/images/amazon.png'),
+      description: 'Jeff Bezos shared your post on the latest trends in e-commerce and how AI is revolutionizing online shopping experiences. He highlighted your perspective on Amazons approach to customer personalization.',
+      time: '3d',
+    },
+    {
+      profileImage: require('../../assets/images/Profile-Picture1.jpg'),
+      description: 'Satya Nadella liked your recent post about the impact of AI on cloud computing. He commented that your insights into Azure s new features were spot-on.',
+      time: '5h',
+    },
+    {
+      profileImage: require('../../assets/images/img6.jpg'),
+      description: 'Tim Cook commented on your article about the future of augmented reality in consumer technology. He mentioned that your analysis on Apples ARKit advancements was quite insightful.',
+      time: '8h',
+    },
+    {
+      profileImage: require('../../assets/images/ibm.png'),
+      description: 'Bob Brown started following you.',
+      time: '1d',
+    },
+    {
+      profileImage: require('../../assets/images/Profile-Picture2.jpg'),
+      description: 'Charlie Green shared your post.',
+      time: '3d',
+    },
+    {
+      profileImage: require('../../assets/images/microsoft.png'),
+      description: 'Satya Nadella liked your recent post about the impact of AI on cloud computing. He commented that your insights into Azure s new features were spot-on.',
+      time: '5h',
+    },
+    {
+      profileImage: require('../../assets/images/Profile-Picture5.jpg'),
+      description: 'Tim Cook commented on your article about the future of augmented reality in consumer technology. He mentioned that your analysis on Apples ARKit advancements was quite insightful.',
+      time: '8h',
     },
   ];
 
@@ -79,7 +159,7 @@ const styles = StyleSheet.create({
   profileImage: {
     width: 50,
     height: 50,
-    borderRadius: 10,
+    borderRadius: 1,
     marginRight: 15,
   },
   notificationContent: {

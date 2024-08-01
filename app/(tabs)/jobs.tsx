@@ -20,6 +20,21 @@ export default function JobScreen() {
     { companyImage: require('../../assets/images/8.jpg'), companyName: 'Full Stack Developer (React.js + Node.js)', description: 'WSO2',  jobDescription: 'Job description for company eight' },
     { companyImage: require('../../assets/images/hcltech.jpg'), companyName: 'Linux Consultant', description: 'HCL Tech',  jobDescription: 'Job description for company nine' },
     { companyImage: require('../../assets/images/Company10.jpg'), companyName: 'Backend Staff Engineer, (Spring boot-Java)', description: 'PaperTrl',  jobDescription: 'Job description for company ten' },
+    { companyImage: require('../../assets/images/Company03.jpg'), companyName: 'Senior Develops Engineer', description: 'Epic Lanka',  jobDescription: 'Job description for company three' },
+    { companyImage: require('../../assets/images/Company09.jpg'), companyName: 'Senior Software Engineer, (GO and Node)', description: 'RootCode Lab',  jobDescription: 'Job description for company four' },
+    { companyImage: require('../../assets/images/Company05.jpg'), companyName: 'Staff Software Engineer/Technical Lead - Snowflake', description: 'Sysco Lab',  jobDescription: 'Job description for company five' },
+    { companyImage: require('../../assets/images/Company06.jpg'), companyName: 'WordPress Developer/Level 1 Desktop Support Specialist', description: '99x',  jobDescription: 'Job description for company six' },
+    { companyImage: require('../../assets/images/Company01.jpg'), companyName: 'Trainee System Engineer End User IT Surpport', description: 'IFS', jobDescription: 'Colombo, Western Province, Sri Lanka' },
+    { companyImage: require('../../assets/images/Company02.jpg'), companyName: 'Lead/Senior QA Automation Engineer', description: 'Fcode Labs', jobDescription: 'Job description for company two' },
+    { companyImage: require('../../assets/images/Company03.jpg'), companyName: 'Senior Develops Engineer', description: 'Epic Lanka',  jobDescription: 'Job description for company three' },
+    { companyImage: require('../../assets/images/Company09.jpg'), companyName: 'Senior Software Engineer, (GO and Node)', description: 'RootCode Lab',  jobDescription: 'Job description for company four' },
+    { companyImage: require('../../assets/images/Company05.jpg'), companyName: 'Staff Software Engineer/Technical Lead - Snowflake', description: 'Sysco Lab',  jobDescription: 'Job description for company five' },
+    { companyImage: require('../../assets/images/Company03.jpg'), companyName: 'Senior Develops Engineer', description: 'Epic Lanka',  jobDescription: 'Job description for company three' },
+    { companyImage: require('../../assets/images/Company09.jpg'), companyName: 'Senior Software Engineer, (GO and Node)', description: 'RootCode Lab',  jobDescription: 'Job description for company four' },
+    { companyImage: require('../../assets/images/Company05.jpg'), companyName: 'Staff Software Engineer/Technical Lead - Snowflake', description: 'Sysco Lab',  jobDescription: 'Job description for company five' },
+    { companyImage: require('../../assets/images/Company06.jpg'), companyName: 'WordPress Developer/Level 1 Desktop Support Specialist', description: '99x',  jobDescription: 'Job description for company six' },
+    { companyImage: require('../../assets/images/Company01.jpg'), companyName: 'Trainee System Engineer End User IT Surpport', description: 'IFS', jobDescription: 'Colombo, Western Province, Sri Lanka' },
+    { companyImage: require('../../assets/images/Company02.jpg'), companyName: 'Lead/Senior QA Automation Engineer', description: 'Fcode Labs', jobDescription: 'Job description for company two' },
   ];
 
   return (
